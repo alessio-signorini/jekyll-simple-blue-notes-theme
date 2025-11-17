@@ -17,9 +17,15 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.add_runtime_dependency "jekyll", "~> 3.9.3"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.12"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
+  spec.add_runtime_dependency "jekyll-sass-converter", "~> 2.0"
+  spec.add_runtime_dependency "rouge", "~> 3.26"
+  spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1"
+  spec.add_runtime_dependency "webrick", "~> 1.7"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
