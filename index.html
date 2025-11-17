@@ -14,7 +14,6 @@ layout: default
       </div>
 
       <footer class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y (%l:%M %p)" | upcase }}</time>
         {% if post.tags %}
           <span class="post-tags">
             {% for tag in post.tags %}
@@ -22,6 +21,7 @@ layout: default
             {% endfor %}
           </span>
         {% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y (%l:%M %p)" | upcase }}</time>
       </footer>
     </article>
   {% endfor %}

@@ -1,14 +1,9 @@
 ---
 ---
-
-// Variables
 $primary: #529ecc;
 $text: #4C4C4C;
 $meta: #999;
-$bg-code: #f5f5f5;
-$font-mono: Menlo, Monaco, Consolas, monospace;
 
-// Reset & Base
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -23,7 +18,6 @@ a {
   &:hover { text-decoration: underline; }
 }
 
-// Layout
 .color_bar { height: 12px; background: $primary; }
 
 .container {
@@ -33,7 +27,6 @@ a {
   min-height: 100vh;
 }
 
-// Header
 .site-header { margin-bottom: 60px; }
 
 .header-content {
@@ -54,74 +47,68 @@ a {
   }
 }
 
-.site-title {
-  font-size: 36px;
+.site-title, .post-title {
   font-weight: 700;
-  margin-bottom: 10px;
   letter-spacing: -1px;
-  line-height: 1.2;
-  a { color: #333; &:hover { text-decoration: none; } }
+  a {
+    color: #333;
+    &:hover { text-decoration: none; }
+  }
 }
 
-.site-description {
-  font-size: 0.9375rem;
-  color: #646464;
-}
-
-// Posts
-.post { margin-bottom: 70px; }
-
-.post-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  letter-spacing: -1px;
-  a { color: #333; &:hover { text-decoration: none; } }
-}
+.site-title { font-size: 36px; margin-bottom: 10px; }
+.site-description { font-size: 15px; color: #646464; }
+.post { margin-bottom: 60px; }
+.post-title { font-size: 32px; margin-bottom: 20px; }
 
 .post-content, .post-excerpt {
   line-height: 1.7;
   p { margin-bottom: 1.2em; }
   ul, ol { margin-left: 30px; margin-bottom: 1em; }
-  h3 { font-size: 1.2rem; font-weight: 600; margin-top: 1.5em; }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5em;
+  }
 }
 
 p code, .highlighter-rouge code {
-  font-family: $font-mono;
-  font-size: 0.875rem;
-  background: $bg-code;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  background: #f5f5f5;
   padding: 3px 6px;
   border-radius: 3px;
 }
 
 .post-content pre, .highlighter-rouge pre {
-  background: $bg-code;
+  background: #f5f5f5;
   padding: 15px 20px;
   overflow-x: auto;
   margin: 1.5em 0;
   code { background: transparent; padding: 0; }
 }
 
-// Meta
 .post-meta {
-  font-size: 0.6875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
   color: $meta;
   text-transform: uppercase;
   margin-top: 20px;
 }
 
 .post-tags {
-  display: inline-flex;
+  display: flex;
   gap: 10px;
   .tag { color: $primary; }
 }
 
-// Pagination
 .pagination {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0 40px;
-  font-size: 0.75rem;
+  margin: 50px 0;
+  font-size: 12px;
   a {
     color: $meta;
     text-transform: uppercase;
@@ -129,16 +116,14 @@ p code, .highlighter-rouge code {
   }
 }
 
-// Footer
 .site-footer {
-  margin-top: 80px;
-  padding: 30px 0 40px;
+  margin-top: 60px;
+  padding: 30px 0;
   border-top: 1px solid #e8e8e8;
-  font-size: 0.7rem;
+  font-size: 11px;
   color: #aaa;
 }
 
-// Responsive
 @media (max-width: 768px) {
   .container { padding: 15px; width: 100%; }
   .site-title { font-size: 2rem; }
