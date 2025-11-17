@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml|\w+\.html)}i)
+    f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml|\w+\.md)}i)
   end
 
   spec.required_ruby_version = ">= 2.6.0"
@@ -22,8 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-seo-tag"
   spec.add_runtime_dependency "jekyll-sitemap"
   spec.add_runtime_dependency "jekyll-redirect-from"
-  spec.add_runtime_dependency "jekyll-sass-converter"
-  spec.add_runtime_dependency "rouge"
   spec.add_runtime_dependency "kramdown-parser-gfm"
  
   spec.add_development_dependency "webrick"

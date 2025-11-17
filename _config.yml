@@ -18,11 +18,16 @@ kramdown:
 
 permalink: /:title/
 
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # Collections
 collections:
   posts:
     output: true
-    permalink: /:title/
 
 # Defaults
 defaults:
