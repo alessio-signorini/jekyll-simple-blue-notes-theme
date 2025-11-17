@@ -14,7 +14,7 @@ title: Archive
   
   {% for post in posts %}
     {% assign current_year = post.date | date: "%Y" %}
-    {% assign previous_year = post.previous.date | date: "%Y" %}
+    {% assign previous_year = post.next.date | date: "%Y" %}
     
     {% if forloop.first or current_year != previous_year %}
       <h3 class="archive-year">{{ current_year }}</h3>
