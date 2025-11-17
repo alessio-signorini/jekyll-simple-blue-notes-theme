@@ -2,72 +2,39 @@
 ---
 
 // Variables
-$color-primary: #529ecc;
-$color-text: #4C4C4C;
-$color-title: #333333;
-$color-subtitle: #646464;
-$color-meta: #999;
-$color-bg-code: #f5f5f5;
-$color-border: #e8e8e8;
+$primary: #529ecc;
+$text: #4C4C4C;
+$meta: #999;
+$bg-code: #f5f5f5;
+$font-mono: Menlo, Monaco, Consolas, monospace;
 
-$font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
-
-$size-base: 15px;
-$size-title: 36px;
-$size-post-title: 32px;
-
-$width-container: 740px;
-
-// Reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-// Base
-html {
-  font-size: $size-base;
-}
+// Reset & Base
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: $font-base;
-  line-height: 1.6;
-  color: $color-text;
-  background-color: #fff;
+  font: 15px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $text;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: $color-primary;
+  color: $primary;
   text-decoration: none;
-  
-  &:hover {
-    text-decoration: underline;
-  }
+  &:hover { text-decoration: underline; }
 }
 
-// Color bar
-.color_bar {
-  height: 12px;
-  background-color: $color-primary;
-  width: 100%;
-}
+// Layout
+.color_bar { height: 12px; background: $primary; }
 
-// Container
 .container {
-  width: $width-container;
+  width: 740px;
   margin: 0 auto;
   padding: 60px 20px;
   min-height: 100vh;
 }
 
 // Header
-.site-header {
-  margin-bottom: 60px;
-}
+.site-header { margin-bottom: 60px; }
 
 .header-content {
   display: flex;
@@ -75,197 +42,90 @@ a {
   align-items: flex-start;
 }
 
-.header-text {
-  flex: 1;
-}
+.header-text { flex: 1; }
 
 #blog_avatar {
   margin-left: 20px;
-  flex-shrink: 0;
-  
-  .avatar {
-    display: block;
-  }
-  
   img {
     width: 48px;
     height: 48px;
     border-radius: 3px;
     border: 1px solid rgba(0,0,0,.1);
-    display: block;
   }
 }
 
 .site-title {
-  font-size: $size-title;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 10px;
   letter-spacing: -1px;
   line-height: 1.2;
-  
-  a {
-    color: $color-title;
-    
-    &:hover {
-      text-decoration: none;
-    }
-  }
+  a { color: #333; &:hover { text-decoration: none; } }
 }
 
 .site-description {
   font-size: 0.9375rem;
-  color: $color-subtitle;
-  line-height: 1.5;
+  color: #646464;
 }
 
 // Posts
-.posts {
-  margin-bottom: 60px;
-}
-
-.post {
-  margin-bottom: 70px;
-}
+.post { margin-bottom: 70px; }
 
 .post-title {
-  font-size: $size-post-title;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 25px;
-  line-height: 1.3;
   letter-spacing: -1px;
-  
-  a {
-    color: $color-title;
-    
-    &:hover {
-      text-decoration: none;
-    }
-  }
+  a { color: #333; &:hover { text-decoration: none; } }
 }
 
-.post-content,
-.post-excerpt {
-  font-size: 1rem;
+.post-content, .post-excerpt {
   line-height: 1.7;
-  color: $color-text;
-  margin-bottom: 20px;
-  
-  p {
-    margin-bottom: 1.2em;
-  }
-  
-  ul, ol {
-    margin-left: 30px;
-    margin-bottom: 1em;
-  }
-  
-  li {
-    margin-bottom: 0.5em;
-  }
-  
-  pre {
-    background-color: $color-bg-code;
-    padding: 15px 20px;
-    overflow-x: auto;
-    margin: 1.5em 0;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    
-    code {
-      background-color: transparent;
-      padding: 0;
-      font-size: inherit;
-    }
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-  }
+  p { margin-bottom: 1.2em; }
+  ul, ol { margin-left: 30px; margin-bottom: 1em; }
+  h3 { font-size: 1.2rem; font-weight: 600; margin-top: 1.5em; }
 }
 
-p code {
+p code, .highlighter-rouge code {
   font-family: $font-mono;
-  font-size: 0.8em !important;
-  background-color: #efefef;
+  font-size: 0.875rem;
+  background: $bg-code;
   padding: 3px 6px;
   border-radius: 3px;
 }
 
-// Syntax highlighting
-.highlighter-rouge {
+.post-content pre, .highlighter-rouge pre {
+  background: $bg-code;
+  padding: 15px 20px;
+  overflow-x: auto;
   margin: 1.5em 0;
-  
-  .highlight,
-  pre {
-    background-color: $color-bg-code;
-    padding: 10px;
-    overflow-x: auto;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    margin: 0;
-  }
-  
-  code {
-    background-color: transparent;
-    padding: 0;
-    font-family: $font-mono;
-    color: $color-text;
-  }
+  code { background: transparent; padding: 0; }
 }
 
-.language-plaintext {
-  font-size: 0.9em;
-}
-
-// Post meta
+// Meta
 .post-meta {
   font-size: 0.6875rem;
-  color: $color-meta;
+  color: $meta;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   margin-top: 20px;
-  
-  time {
-    display: inline-block;
-    margin-right: 10px;
-  }
 }
 
 .post-tags {
   display: inline-flex;
-  flex-wrap: wrap;
   gap: 10px;
-  
-  .tag {
-    color: $color-primary;
-  }
+  .tag { color: $primary; }
 }
 
 // Pagination
 .pagination {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 50px 0 40px;
   font-size: 0.75rem;
-  
   a {
-    color: $color-meta;
+    color: $meta;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    
-    &:hover {
-      color: $color-primary;
-    }
-  }
-  
-  &-archive {
-    margin-left: auto;
+    &:hover { color: $primary; }
   }
 }
 
@@ -273,37 +133,14 @@ p code {
 .site-footer {
   margin-top: 80px;
   padding: 30px 0 40px;
-  border-top: 1px solid $color-border;
+  border-top: 1px solid #e8e8e8;
   font-size: 0.7rem;
   color: #aaa;
-  letter-spacing: 0.3px;
 }
 
 // Responsive
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
-    width: 100%;
-  }
-  
-  .site-header {
-    margin-bottom: 40px;
-  }
-  
-  .site-title {
-    font-size: 2rem;
-  }
-  
-  .post {
-    margin-bottom: 60px;
-  }
-  
-  .post-title {
-    font-size: 1.3rem;
-  }
-  
-  .pagination {
-    flex-direction: column;
-    gap: 15px;
-  }
+  .container { padding: 15px; width: 100%; }
+  .site-title { font-size: 2rem; }
+  .post-title { font-size: 1.3rem; }
 }
