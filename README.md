@@ -25,6 +25,7 @@ A minimal, clean Jekyll theme inspired by Tumblr's classic simple themes. Perfec
    description: Your site description
    url: https://yourdomain.com
    google_analytics: ""  # Optional
+   show_only: ""  # Optional - show only <category> posts
    ```
 
 3. **Add required files:**

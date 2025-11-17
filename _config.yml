@@ -7,6 +7,9 @@ baseurl: ""
 # Google Analytics
 google_analytics: ""
 
+# If only one category is to be shown, set it here
+show_only: ""
+
 # Build settings
 markdown: kramdown
 kramdown:
