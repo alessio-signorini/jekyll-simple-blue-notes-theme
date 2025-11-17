@@ -14,18 +14,19 @@ kramdown:
       line_numbers: false
 permalink: /post/:year/:month/:day/:title/
 plugins:
-  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
-
-# Pagination
-paginate: 5
-paginate_path: "/page/:num/"
 
 # Collections
 collections:
   posts:
     output: true
+  recipes:
+    output: true
+    permalink: /recipes/:title/
+  travel:
+    output: true
+    permalink: /travel/:title/
 
 # Defaults
 defaults:
@@ -34,6 +35,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
+  - scope:
+      path: ""
+      type: "travel"
+    values:
+      layout: "travel"
 
 # Exclude
 exclude:
