@@ -16,11 +16,14 @@ permalink: /post/:year/:month/:day/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Collections
 collections:
   posts:
     output: true
+    permalink: /:title/
   recipes:
     output: true
     permalink: /recipes/:title/
