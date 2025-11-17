@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts limit:3 %}
-    {% include post-preview.html post=post %}
+    {% include post-render.html post=post %}
   {% endfor %}
 </div>
 

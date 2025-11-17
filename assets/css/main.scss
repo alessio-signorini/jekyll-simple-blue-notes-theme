@@ -124,6 +124,38 @@ p code, .highlighter-rouge code {
   color: #aaa;
 }
 
+.archive {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+.archive-year {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.archive-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+
+  time {
+    color: $meta;
+    min-width: 60px;
+    font-size: 0.875rem;
+  }
+
+  a {
+    color: #444;
+    &:hover { color: #000; }
+  }
+}
+
 @media (max-width: 768px) {
   .container { padding: 15px; width: 100%; }
   .site-title { font-size: 2rem; }
