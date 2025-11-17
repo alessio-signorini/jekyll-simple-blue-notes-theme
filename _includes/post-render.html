@@ -11,7 +11,7 @@
     {% if include.post.tags %}
       <span class="post-tags">
         {% for tag in include.post.tags %}
-          <a href="{{ '/tagged/' | append: tag | downcase | replace: ' ', '%20' | relative_url }}" class="tag"># {{ tag | upcase }}</a>
+          <a href="" class="tag"># {{ tag | upcase }}</a>
         {% endfor %}
       </span>
     {% endif %}
