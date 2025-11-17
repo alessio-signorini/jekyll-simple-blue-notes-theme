@@ -55,4 +55,9 @@ yarn-error.log*
 # Logs
 *.log
 
+# Ignore Github prompts
 .github/prompts
+
+# Ignore testing images
+assets/images/avatar.png
+assets/images/favicon.png
