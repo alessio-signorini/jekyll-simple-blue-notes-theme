@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-blog-theme"
+  spec.name          = "jekyll-simple-blue-notes-theme"
   spec.version       = "0.1.0"
   spec.authors       = ["Alessio Signorini"]
   spec.email         = ["alessio@signorini.us"]
 
-  spec.summary       = "A minimal, clean Jekyll theme for blogs"
-  spec.description   = "A minimal, clean Jekyll theme inspired by Daily Thoughts blog with support for posts, tags, pagination, and archive pages."
+  spec.summary       = "A minimal, clean Jekyll theme for notes and blogs"
+  spec.description   = "A simple Jekyll theme designed for personal notes and blogs, has an archive, tags, and a clean layout inspired by the simplicity of Tumblr's old themes."
   spec.homepage      = "https://github.com/yourusername/jekyll-blog-theme"
   spec.license       = "MIT"
 

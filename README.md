@@ -1,12 +1,11 @@
-# Jekyll Blog Theme
+# Jekyll Simple Blue Notes Theme
 
-A minimal, clean Jekyll theme inspired by Daily Thoughts blog.
+A minimal, clean Jekyll theme inspired by one of Tumblr's old simple themes.
 
 ## Features
 
 - Clean, minimal design
 - Responsive layout
-- Blog post listing with pagination
 - Archive page
 - Tag support
 - RSS feed ready
@@ -31,19 +30,20 @@ bundle exec jekyll serve
 Edit `_config.yml` to customize:
 - Site title and description
 - URL settings
-- Pagination settings
+
+Remember to add `assets/images/favicon.png` and `assets/images/avatar.png`.
 
 ## Writing Posts
 
 Create new posts in the `_posts` directory following the naming convention:
-```
-YYYY-MM-DD-title-of-post.md
+
+```bash
+/_posts/YYYY-MM-DD-title-of-post.md
 ```
 
 Front matter example:
 ```yaml
 ---
-layout: post
 title: "Your Post Title"
 date: 2021-05-15
 tags: [tag1, tag2, tag3]
