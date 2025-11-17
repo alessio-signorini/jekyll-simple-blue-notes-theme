@@ -15,6 +15,6 @@
         {% endfor %}
       </span>
     {% endif %}
-    <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y (%l:%M %p)" | upcase }}</time>
+    <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" | upcase }}</time>
   </footer>
 </article>
