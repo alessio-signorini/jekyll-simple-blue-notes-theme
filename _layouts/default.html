@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
@@ -19,7 +20,7 @@
           <p class="site-description">{{ site.description }}</p>
         </div>
         <section id="blog_avatar">
-          <a href="{{ '/' | relative_url }}" class="avatar"><img src="https://64.media.tumblr.com/avatar_d5cc9c5f62fa_64.pnj" alt="Avatar"></a>
+          <a href="{{ '/' | relative_url }}" class="avatar"><img src="{{ '/assets/images/avatar.png' | relative_url }}" alt="Avatar"></a>
         </section>
       </div>
     </header>
