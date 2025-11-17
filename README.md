@@ -1,61 +1,79 @@
 # Jekyll Simple Blue Notes Theme
 
-A minimal, clean Jekyll theme inspired by one of Tumblr's old simple themes.
+A minimal, clean Jekyll theme inspired by Tumblr's classic simple themes. Perfect for personal blogs and technical notes.
 
 ## Features
 
-- Clean, minimal design
-- Responsive layout
-- Archive page
-- Tag support
-- RSS feed ready
-- Simple navigation
+- Clean, minimal design with responsive layout
+- Archive page with post listing
+- Tag support for organizing content
+- RSS feed, SEO tags, and sitemap
+- Syntax highlighting for code blocks
 
-## Setup
+## Quick Start
 
-1. Install dependencies:
-```bash
-bundle install
-```
+1. **Install dependencies:**
+   ```bash
+   bundle install
+   ```
 
-2. Run the site locally:
-```bash
-bundle exec jekyll serve
-```
+2. **Configure your site:**
+   
+   Edit `_config.yml`:
+   ```yaml
+   title: Your Site Title
+   description: Your site description
+   url: https://yourdomain.com
+   google_analytics: ""  # Optional
+   ```
 
-3. Visit `http://localhost:4000` in your browser
+3. **Add required files:**
+   
+   Create `index.md`:
+   ```yaml
+   ---
+   layout: index
+   ---
+   ```
+   
+   Create `archive.md`:
+   ```yaml
+   ---
+   layout: archive
+   ---
+   ```
 
-## Configuration
+4. **Add images (optional):**
+   - `assets/images/favicon.png`
+   - `assets/images/avatar.png`
 
-Edit `_config.yml` to customize:
-- Site title and description
-- URL settings
-
-Remember to add `assets/images/favicon.png` and `assets/images/avatar.png`.
+5. **Run locally:**
+   ```bash
+   bundle exec jekyll serve
+   ```
+   
+   Visit `http://localhost:4000`
 
 ## Writing Posts
 
-Create new posts in the `_posts` directory following the naming convention:
+Create posts in `_posts/` with the format `YYYY-MM-DD-title.md`:
 
-```bash
-/_posts/YYYY-MM-DD-title-of-post.md
-```
-
-Front matter example:
 ```yaml
 ---
 title: "Your Post Title"
-date: 2021-05-15
-tags: [tag1, tag2, tag3]
+date: 2024-01-15
+tags: [ruby, jekyll, tutorial]
 ---
+
+Your content here...
 ```
 
 ## Customization
 
-- Modify `assets/css/main.css` for styling changes
-- Edit layouts in `_layouts/` directory
-- Update navigation in `_layouts/default.html`
+- **Styles:** Edit `assets/css/custom.scss` or `assets/css/main.scss`
+- **Layouts:** Modify templates in `_layouts/`
+- **Colors/Variables:** Update `_sass/variables.scss`
 
 ## License
 
-Free to use and modify.
+MIT
