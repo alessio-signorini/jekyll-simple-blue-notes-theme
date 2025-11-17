@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts limit:3 %}
+    {% include post-render.html post=post %}
+    {% unless forloop.last %}
+      <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 40px 0;">
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<div style="text-align: center; margin: 40px 0;">
+  <a href="{{ '/archive' | relative_url }}" style="display: inline-block; padding: 10px 20px; color: #529ecc; text-decoration: none; border: 1px solid #529ecc; border-radius: 3px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">View Archive</a>
+</div>
