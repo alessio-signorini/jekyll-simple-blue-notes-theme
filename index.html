@@ -5,6 +5,9 @@ layout: default
 <div class="posts">
   {% for post in site.posts limit:3 %}
     {% include post-render.html post=post %}
+    {% unless forloop.last %}
+      <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 40px 0;">
+    {% endunless %}
   {% endfor %}
 </div>
 
