@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-blog-theme"
   spec.version       = "0.1.0"
-  spec.authors       = ["Your Name"]
-  spec.email         = ["your.email@example.com"]
+  spec.authors       = ["Alessio Signorini"]
+  spec.email         = ["alessio@signorini.us"]
 
   spec.summary       = "A minimal, clean Jekyll theme for blogs"
   spec.description   = "A minimal, clean Jekyll theme inspired by Daily Thoughts blog with support for posts, tags, pagination, and archive pages."
@@ -20,7 +20,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", "~> 4.3"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.12"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
-  spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"

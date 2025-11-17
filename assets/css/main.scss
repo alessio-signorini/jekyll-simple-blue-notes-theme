@@ -56,17 +56,17 @@ a {
 
 .site-title { font-size: 36px; margin-bottom: 10px; }
 .site-description { font-size: 15px; color: #646464; }
-.post { margin-bottom: 60px; }
-.post-title { font-size: 32px; margin-bottom: 20px; }
+.post { margin-bottom: 48px; }
+.post-title { font-size: 32px; margin-bottom: 16px; }
 
 .post-content, .post-excerpt {
-  line-height: 1.7;
-  p { margin-bottom: 1.2em; }
-  ul, ol { margin-left: 30px; margin-bottom: 1em; }
+  line-height: 1.6;
+  p { margin-bottom: 1em; }
+  ul, ol { margin-left: 30px; margin-bottom: 0.8em; }
   h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-top: 1.5em;
+    margin-top: 1.2em;
   }
 }
 
@@ -80,9 +80,9 @@ p code, .highlighter-rouge code {
 
 .post-content pre, .highlighter-rouge pre {
   background: #f5f5f5;
-  padding: 15px 20px;
+  padding: 12px 20px;
   overflow-x: auto;
-  margin: 1.5em 0;
+  margin: 1.2em 0;
   code { background: transparent; padding: 0; }
 }
 
@@ -93,7 +93,7 @@ p code, .highlighter-rouge code {
   font-size: 11px;
   color: $meta;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .post-tags {
