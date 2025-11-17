@@ -4,6 +4,9 @@ description: Some description about the blog
 url: https://blog.yourdomain.com
 baseurl: ""
 
+# Google Analytics
+google_analytics: ""
+
 # Build settings
 markdown: kramdown
 kramdown:
