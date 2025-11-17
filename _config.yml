@@ -1,7 +1,7 @@
 # Site settings
-title: Daily Thoughts
-description: Collection of ideas, thoughts and rambles that come out of my head every day
-url: https://blog.alessiosignorini.com
+title: The title
+description: Some description about the blog
+url: https://blog.yourdomain.com
 baseurl: ""
 
 # Build settings
@@ -12,12 +12,8 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-permalink: /post/:year/:month/:day/:title/
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
+
+permalink: /:title/
 
 # Collections
 collections:
