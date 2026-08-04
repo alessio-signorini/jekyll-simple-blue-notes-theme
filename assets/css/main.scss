@@ -68,6 +68,11 @@ a {
     font-weight: 600;
     margin-top: 1.2em;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 p code, .highlighter-rouge code {
